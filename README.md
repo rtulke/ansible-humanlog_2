@@ -20,7 +20,7 @@ vim /usr/lib/python2.6/site-packages/ansible/executor/task_queue_manager.py +213
 **Debian Fix:**
 
 ```bash
-vim /usr/lib/python2.7/dist-packages/ansibl/eexecutor/task_queue_manager.py +213
+vim /usr/lib/python2.7/dist-packages/ansible/executor/task_queue_manager.py +213
 ```
 and replace the line:
 
