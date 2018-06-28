@@ -11,7 +11,7 @@ Bugfixes
 --------
 
 In Ansible 2.5.3 there is a small bug in task_queue_manager.py To fix this, open the file task_queue_manager.py see below.
-In Ansible 2.5.4 fixed by ansible
+In Ansible 2.5.4 it is fixed by ansible.
 
 **RedHat Fix:**
 ```bash
