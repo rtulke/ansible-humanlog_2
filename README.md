@@ -2,19 +2,41 @@
 
 This Ansible callback plugin for human-readable result logging for Ansible.
 
-Requirements:
--------------
+Requirements
+------------
 
-Tested in: Ansible 1.9, 2.0, 2.1, 2.2, 2.3
+Tested in: Ansible 1.9, 2.0, 2.1, 2.2, 2.3, 2.5
 
-Versions:
----------
+Bugfixes
+--------
+
+In Ansible 2.5.3 there is a small bug in task_queue_manager.py To fix this, open the file task_queue_manager.py see below.
+
+**RedHat Fix:**
+```bash
+vim /usr/lib/python2.6/site-packages/ansible/executor/task_queue_manager.py +213
+```
+
+**Debian Fix:**
+
+```bash
+vim /usr/lib/python2.7/dist-packages/ansibl/eexecutor/task_queue_manager.py +213
+```
+and replace the line:
+
+```bash
+-                                       " see the 2.4 porting guide for details." % self.callback_obj._load_name, version="2.9")
++                                       " see the 2.4 porting guide for details." % callback_obj._load_name, version="2.9")
+```
+
+Versions
+--------
 
 * Modified from: https://github.com/n0ts/ansible-human_log
 * Inspired from: https://github.com/redhat-openstack/khaleesi/blob/master/plugins/callbacks/human_log.py 
 * Original from: https://gist.github.com/cliffano/9868180
-
-
+* Newest on:     https://github.com/rtulke/ansible-humanlog_2
+ 
 Installation:
 -------------
 * download https://raw.githubusercontent.com/rtulke/ansible-humanlog_2/master/human_log2.py or use git
