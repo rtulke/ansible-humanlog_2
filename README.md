@@ -5,22 +5,27 @@ This Ansible callback plugin for human-readable result logging for Ansible.
 Requirements
 ------------
 
-Tested in: Ansible 1.9, 2.0, 2.1, 2.2, 2.3, 2.5
+Tested in: Ansible 1.9.x, 2.0.x, 2.1.x, 2.2.x, 2.3.x, 2.5.x 
 
 Bugfixes
 --------
 
 In Ansible 2.5.3 there is a small bug in task_queue_manager.py To fix this, open the file task_queue_manager.py see below.
+In Ansible 2.5.4 fixed by ansible
 
 **RedHat Fix:**
 ```bash
 vim /usr/lib/python2.6/site-packages/ansible/executor/task_queue_manager.py +213
+or 
+vim /usr/lib/python2.7/site-packages/ansible/executor/task_queue_manager.py +213
 ```
 
 **Debian Fix:**
 
 ```bash
 vim /usr/lib/python2.7/dist-packages/ansible/executor/task_queue_manager.py +213
+or 
+vim /usr/lib/python2.6/dist-packages/ansible/executor/task_queue_manager.py +213
 ```
 and replace the line:
 
