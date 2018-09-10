@@ -1,6 +1,6 @@
 # ansible humanlog 2
 
-This Ansible callback plugin for human-readable result logging for Ansible.
+This is Ansible callback plugin for human-readable result logging.
 
 Requirements
 ------------
