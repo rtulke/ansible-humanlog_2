@@ -12,7 +12,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # Inspired from: https://github.com/redhat-openstack/khaleesi/blob/master/plugins/callbacks/human_log.py
-# Further improved support Ansible 2.0
+# Further improved support Ansible up to 2.6
 
 from __future__ import (absolute_import, division, print_function)
 __metaclass__ = type
