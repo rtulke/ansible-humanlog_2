@@ -5,7 +5,7 @@ This is Ansible callback plugin for human-readable result logging.
 Requirements
 ------------
 
-Tested in: Ansible 1.9.x, 2.0.x, 2.1.x, 2.2.x, 2.3.x, 2.4.x, 2.5.x, 2.6.x
+Tested in: Ansible 1.9.x, 2.0.x, 2.1.x, 2.2.x, 2.3.x, 2.4.x, 2.5.x, 2.6.x, 2.7.x
 
 Bugfixes
 --------
