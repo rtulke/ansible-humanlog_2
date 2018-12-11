@@ -42,8 +42,8 @@ Versions
 * Original from: https://gist.github.com/cliffano/9868180
 * Newest on:     https://github.com/rtulke/ansible-humanlog_2
  
-Installation:
--------------
+Installation
+------------
 * download https://raw.githubusercontent.com/rtulke/ansible-humanlog_2/master/human_log2.py or use git
 
 ```bash
