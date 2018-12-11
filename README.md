@@ -59,14 +59,16 @@ Ansible Systemwide Configuration
 vim /etc/ansible/ansible.cfg
 ```
 
-jump to the plugins path settings, like below:
+jump to the plugins section, like below:
 
 ```
+...
 action_plugins     = /usr/share/ansible_plugins/action_plugins
 connection_plugins = /usr/share/ansible_plugins/connection_plugins
 lookup_plugins     = /usr/share/ansible_plugins/lookup_plugins
 vars_plugins       = /usr/share/ansible_plugins/vars_plugins
 filter_plugins     = /usr/share/ansible_plugins/filter_plugins
+...
 ```
 and add the callback plugin path:
 
